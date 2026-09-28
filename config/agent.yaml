@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: INS-C2-921
+name: Insurance Policy Cancellation Notice Evidence Draft Agent
+namespace: ins
+version: 0.1.0
+enabled: true
+description: Insurance Policy Cancellation Notice Evidence Draft Agent
+class: src.graph.graph.InsC2921CancellationNoticeEvidenceDraftAgent
+category: Cat 2
+industry: INS
+base_type: RAGAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []
